@@ -4,32 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja</title>
+    <title>RD Games - loja de jogos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="bg-primary text-white text-center py-2">
-        Jogos a partir de R$30,00
+    <div class="bg-dark text-white text-center py-2">
+        Frete grátis acima de R$ 199
     </div>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand" href="#">RD games</a>
+            <a class="navbar-brand" href="#">RD Games</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs- target="#menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+
+                            Categorias
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Ação
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    RPG
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Mundo Aberto
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Aventura
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Sobrevivência
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Terror
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas</a>
+                    </li>
+
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar produtos...">
                     <button class="btn btn-outline-primary">Buscar</button>
                 </form>
+                <button class="btn btn-primary ms-3">
+                    🛒 Carrinho
+                    <span class="badge text-bg-danger">2</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -92,57 +153,76 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLXs74DQ0afDhTTU5OtGZZSu-aTbsLOwFrkkmxp4gwInJxVITNvvC9e4&s=10"
                         class="card-img-top" alt="Produto">
                     <div class="card-body">
-                        <h5 class="card-title">Produto 1</h5>
+                        <h5 class="card-title">Dark souls III</h5>
                         <p class="card-text">
                             <span class="text-muted text-decoration-line-through">R$ 154,90</span>
                             <strong class="text-danger">R$ 77,45</strong>
                         </p>
-                        <button class="btn btn-primary w-100">Adicionar ao carrinho</button>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalDarkSouls">
+
+                            Ver detalhes
+
+                        </button>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-3 col-md-6">
                 <div class="card h-100">
                     <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
                     <img src="https://i0.wp.com/cromossomonerd.com.br/wp-content/uploads/2025/08/Silksong.jpg?fit=1600%2C900"
                         class="card-img-top" alt="Produto">
                     <div class="card-body">
-                        <h5 class="card-title">Produto 1</h5>
+                        <h5 class="card-title">Silk song</h5>
                         <p class="card-text">
                             <span class="text-muted text-decoration-line-through">R$ 59,99</span>
                             <strong class="text-danger">R$29,99</strong>
                         </p>
-                        <button class="btn btn-primary w-100">Adicionar ao carrinho</button>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalSilksong">
+
+                            Ver detalhes
+
+                        </button>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-3 col-md-6">
                 <div class="card h-100">
                     <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
                     <img src="https://img.odcdn.com.br/wp-content/uploads/2020/06/20200611083112.jpg"
                         class="card-img-top" alt="Produto">
                     <div class="card-body">
-                        <h5 class="card-title">Produto 1</h5>
+                        <h5 class="card-title">The Last of Us II</h5>
                         <p class="card-text">
                             <span class="text-muted text-decoration-line-through">R$ 199,90</span>
                             <strong class="text-danger">R$99,99</strong>
                         </p>
-                        <button class="btn btn-primary w-100">Adicionar ao carrinho</button>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalTLOU">
+
+                            Ver detalhes
+
+                        </button>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-3 col-md-6">
                 <div class="card h-100">
                     <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
                     <img src="https://blog.br.playstation.com/tachyon/sites/4/2021/09/God-of-War-Ragnarok-Featured-image.jpg?resize=1088%2C612&crop_strategy=smart"
                         class="card-img-top" alt="Produto">
                     <div class="card-body">
-                        <h5 class="card-title">Produto 1</h5>
+                        <h5 class="card-title">God of War Ragnarok</h5>
                         <p class="card-text">
                             <span class="text-muted text-decoration-line-through">R$ 249,90</span>
                             <strong class="text-danger">R$ 159,99</strong>
                         </p>
-                        <button class="btn btn-primary w-100">Adicionar ao carrinho</button>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalGodOfWar">
+
+                            Ver detalhes
+
+                        </button>
                     </div>
                 </div>
             </div>
@@ -151,8 +231,436 @@
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <div class="container mt-4">
+
+        <div class="row g-3">
+
+            <div class="col-12 col-md-6">
+
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgUUDbfo1Epo2jEifuziLW31RjdV5T7JqhWWdc98EZdcU0KyKTuP_GSksZzvZl5QWvW-U00hkOqr_CGSAE1TqoqsuIA2jS1C2kelBTmfHiQBQhm2d0DVdV828M1JkEbWvGhHL38vVusmWF_by1_EzA3fWQs7G7bBZKn3bjBWodGiXN8vmzZzwJJajnMbQ/w640-h360-rw/image%20(3).png"
+                    class="img-fluid w-100 rounded" alt="Imagem promocional">
+
+            </div>
+
+            <div class="col-12 col-md-6">
+
+                <img src="https://s2-techtudo.glbimg.com/RxjAn7kzvc8rU-ANaohB0wPLdKI=/0x0:1917x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/t/o/EgApCLSba6JVka0Irz3w/days-of-play-lancamentos.jpg"
+                    class="img-fluid w-100 rounded" alt="Imagem promocional">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg-light py-4 mt-4">
+
+        <div class="container">
+
+            <div class="row g-3">
+
+                <div class="col-md-4">
+
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+
+                        <div class="rounded-circle border overflow-hidden flex-shrink-0"
+                            style="width: 60px; height: 60px;">
+
+                            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/75132197-minimalista-estilo-entrega-caminhao-icone-simbolo-para-transporte-o-negocio-vetor.jpg"
+                                class="w-100 h-100 object-fit-cover" alt="Entrega">
+
+                        </div>
+
+                        <div>
+
+                            <h6 class="mb-2">
+                                Entrega para todo o Brasil
+                            </h6>
+
+                            <hr class="my-0">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+
+                        <div class="rounded-circle border overflow-hidden flex-shrink-0"
+                            style="width: 60px; height: 60px;">
+
+                            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/4726025-icone-de-dinheiro-seguro-em-branco-vetor.jpg"
+                                class="w-100 h-100 object-fit-cover" alt="Pagamento seguro">
+
+                        </div>
+
+                        <div>
+
+                            <h6 class="mb-2">
+                                Pagamento seguro
+                            </h6>
+
+                            <hr class="my-0">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+
+                        <div class="rounded-circle border overflow-hidden flex-shrink-0"
+                            style="width: 60px; height: 60px;">
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgSuZdoT1L15IUVTXfoEtS4REmkJJptMFQn9vVAlWiKFPl9g2OhNqK2CA&s=10"
+                                class="w-100 h-100 object-fit-cover" alt="Troca grátis">
+
+                        </div>
+
+                        <div>
+
+                            <h6 class="mb-2">
+                                Troca Grátis em 30 Dias
+                            </h6>
+
+                            <hr class="my-0">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container mt-5">
+
+        <h2 class="text-center mb-3">
+            Receba Nossas Novidades!
+        </h2>
+
+        <div class="input-group">
+
+            <input type="email" class="form-control" placeholder="Digite seu e-mail">
+
+            <button class="btn btn-primary">
+                Assinar
+            </button>
+
+        </div>
+
+    </div>
+
+    <footer class="bg-dark text-white mt-5 pt-5 pb-3">
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="col-md-3">
+
+                    <h5>RD Games</h5>
+
+                    <p>
+                        Sua loja de jogos favorita. Encontre os melhores jogos e aproveite nossas promoções
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <h5>Institucional</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <a href="#" class="text-white">
+                                Sobre nós
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-white">
+                                Termos de uso
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-white">
+                                Política de privacidade
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <h5>Atendimento</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li>Central de ajuda</li>
+                        <li>Trocas e devoluções</li>
+                        <li>Fale conosco</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <h5>Contato</h5>
+
+                    <p>
+                        Instagram: @RDGames.oficial
+                    </p>
+
+                    <p>
+                        Número: +55 82 90000-0000
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="text-center">
+
+                <p class="mb-0">
+                    © 2026 RD Games - Todos os direitos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="modal fade" id="modalDarkSouls">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Dark Souls III
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>
+                        Dark Souls III é um jogo de ação e RPG
+                        conhecido por seus desafios e combates.
+                    </p>
+
+                    <p>
+                        <strong>Preço:</strong> R$ 77,45
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+
+                        Fechar
+
+                    </button>
+
+                    <button class="btn btn-primary">
+
+                        Adicionar ao carrinho
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modalSilksong">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Hollow Knight: Silksong
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>
+                        Explore um novo reino e enfrente
+                        diversos inimigos em uma aventura de ação.
+                    </p>
+
+                    <p>
+                        <strong>Preço:</strong> R$ 29,99
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+
+                        Fechar
+
+                    </button>
+
+                    <button class="btn btn-primary">
+                        Adicionar ao carrinho
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modalTLOU">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        The Last of Us Part II
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>
+                        Uma aventura de ação e sobrevivência
+                        em um mundo pós-apocalíptico.
+                    </p>
+
+                    <p>
+                        <strong>Preço:</strong> R$ 99,99
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+
+                        Fechar
+
+                    </button>
+
+                    <button class="btn btn-primary">
+                        Adicionar ao carrinho
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modalGodOfWar">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        God of War Ragnarok
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>
+                        Kratos e Atreus enfrentam novos desafios
+                        durante o início do Fimbulwinter.
+                    </p>
+
+                    <p>
+                        <strong>Preço:</strong> R$ 159,99
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+
+                        Fechar
+
+                    </button>
+
+                    <button class="btn btn-primary">
+                        Adicionar ao carrinho
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
 </body>
 
 </html>
